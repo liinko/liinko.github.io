@@ -1,57 +1,11 @@
 <html>
 	<body>
-		<h1>Version 2.0.4&nbsp;</h1>
+		<h1>Version 2.0.5&nbsp;</h1>
 		<ul>
 			<li>
-				<h3>Application</h3>
+				<h3>HotFix</h3>
 				<ul>
-					<li>You can now preview Mod Pack files while game is running</li>
-					<li>You can now select default race to load from customize menu</li>
-					<li>Added Keep Camera Position option to prevent model from zooming out when loaded</li>
-					<li>Now checks for incorrect index dat counts on startup
-						<ul>
-							<li>This prevents the "Could not locate data files." error</li>
-						</ul>
-					</li>
-					<li>Now checks for outdated index backups in problem check and when doing a Start Over
-						<ul>
-							<li>This seems to be the cause of certain models missing in-game and several game crashes</li>
-						</ul>
-					</li>
-					<li>Updated to latest Helix Toolkit release
-						<ul>						
-							<li>Hopefully this solves the black screen issue</li>
-						</ul>
-					</li>
-					<li>Additional messages to handle more unhandled exceptions</li>
-					<li>Now creates crash dump files to %LOCALAPPDATA%\FFXIV_TexTools\CrashDumps</li>
-				</ul>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<h3>3D</h3>
-				<ul>
-					<li>Index import calculations now match 1.9.9.3</li>
-					<li>Improved handling of bones on import</li>
-					<li>Mesh parts are now automatically reorganized (eg. [0, 0.1, 0.4] > [0, 0.1, 0.2])</li>
-				</ul>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<h3>Bug Fixes</h3>
-				<ul>
-					<li>Fix for issue where UV seams would break upon import, causing texture to appear distorted </li>
-					<li>Fix for issue where error would appear if Mesh 0 was blank or missing</li>
-					<li>Fix for issue where TT would not get correct data if meshes in the DAE file were not in order</li>
-					<li>Fix for issue where bones that were not used were being imported, causing distortions or meshes to not appear in-game</li>
-					<li>Fix for issue where unorganized mesh parts in the DAE would cause "given key not present" error on import</li>
-					<li>Fix for issue where DAE files with large amounts of vertex color data would make the application hang</li>
-					<li>Fix for issue where DAE read would fail if meshes had different types for indices</li>
-					<li>Fix for issue where mdl header could not be larger than 384bytes causing large models to fail</li>
-					<li>Fix for issue were DAE could have extra values added on to vertex colors, which would cause parts of a mesh to appear black in-game</li>
-					<li>Other small fixes</li>
+					<li>Fix for issue where Vertex Colors would not be read correctly causing import errors.</li>
 				</ul>
 			</li>
 		</ul>
