@@ -1,40 +1,39 @@
 <html>
 	<body>
-		<h1>Version 2.0.7&nbsp;</h1>
+		<h1>Version 2.0.8&nbsp;</h1>
 		<ul>
 			<li>
 				<h3>Application</h3>
 				<ul>
-					<li>Added Ears subcategory under Character category (for Viera ears)</li>
-					<li>Added Skeleton files for Viera and Hrothgar</li>
-					<li>Problem checker now checks for empty dat files</li>
+					<li>Contains all changes up to 2.0.7.87 (thanks to Esrin)</li>
+					<li>Updated offsets for patch 5.1 (fixes UI and Housing not loading)</li>
+					<li>Changed dependencies for image manipulation, hopefully this will solve the issue of crash on startup and crash when attempting to view 3D models for some people that were having this issue.
+						<ul>
+							<li>This also reduces the overall size of the application.</li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 		</ul>
 		<ul>
 			<li>
-				<h3>Textures</h3>
+				<h3>Items</h3>
 				<ul>
-					<li>Added all Hrothgar body textures (Diffuse has different fur patterns)</li>
-					<li>Added all Hrothgar tail textures</li>
+					<li>Added missing SmallClothes Hands and Added SmallClothes for NPCs (9903)
+							<ul>
+								<li>Hands have no specific texture, they are part of the body texture</li>
+							</ul>
+					</li>
 				</ul>
 			</li>
 		</ul>
-		<ul>
-			<li>
-				<h3>3D</h3>
-				<ul>
-					<li>Now uses AssetCc2 for character head/face if bones are missing from default included skeleton file</li>
-				</ul>
-			</li>
-		</ul>
-		<ul>
+		<ul> 
 			<li>
 				<h3>Bug Fixes</h3>
 				<ul>
-					<li>Fix for issue where Hrothgar body texture was not showing on models</li>
-					<li>Fix for issue where some UI elements would not change when another language was selected</li>
-					<li>Fix for issue where UI status items were not being read correctly</li>
+					<li>Fix for modpack wizard crashing after closing the window</li>
+					<li>Fix for issue where certain models would cause a crash on certain races (eg. Sea Breeze Summer Halter on Male)</li>
+					<li>Fix for issue where vertex colors for models were not being imported</li>
 				</ul>
 			</li>
 		</ul>
