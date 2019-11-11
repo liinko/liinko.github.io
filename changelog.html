@@ -1,17 +1,25 @@
 <html>
 	<body>
-		<h1>Version 2.0.8&nbsp;</h1>
+		<h1>Version 2.0.9&nbsp;</h1>
 		<ul>
 			<li>
 				<h3>Application</h3>
 				<ul>
-					<li>Contains all changes up to 2.0.7.87 (thanks to Esrin)</li>
-					<li>Updated offsets for patch 5.1 (fixes UI and Housing not loading)</li>
-					<li>Changed dependencies for image manipulation, hopefully this will solve the issue of crash on startup and crash when attempting to view 3D models for some people that were having this issue.
+					<li>Update to .Net 4.7.2</li>
+					<li>Updated all dependencies to latest versions</li>
+					<li>Modpack import/export window now resizes columns to fit content</li>
+					<li>New option to set default modpack author in Options > Customize > Export Settings
 						<ul>
-							<li>This also reduces the overall size of the application.</li>
+							<li>Author will auto populate when creating a modpack</li>
 						</ul>
 					</li>
+					<li>Changed default export to Autodesk Collada
+						<ul>
+							<li>This only affects new installs</li>
+						</ul>
+					</li>
+					<li>Deleting ModPack from Mod List window now shows a wait message until it is complete</li>
+					<li>Updated all Skeleton files</li>
 				</ul>
 			</li>
 		</ul>
@@ -19,9 +27,9 @@
 			<li>
 				<h3>Items</h3>
 				<ul>
-					<li>Added missing SmallClothes Hands and Added SmallClothes for NPCs (9903)
+					<li>Weapons with gear as secondary will now display appropriate gear piece
 							<ul>
-								<li>Hands have no specific texture, they are part of the body texture</li>
+								<li>This affects some two handed weapons (eg. Makai Fists, Sudarshana Chakra)</li>
 							</ul>
 					</li>
 				</ul>
@@ -31,9 +39,12 @@
 			<li>
 				<h3>Bug Fixes</h3>
 				<ul>
-					<li>Fix for modpack wizard crashing after closing the window</li>
-					<li>Fix for issue where certain models would cause a crash on certain races (eg. Sea Breeze Summer Halter on Male)</li>
-					<li>Fix for issue where vertex colors for models were not being imported</li>
+					<li>Fix for issue where some dae files would fail to import due to vertex colors</li>
+					<li>Fix for ModPack Wizard not changing to dark theme correctly</li>
+					<li>Fix for issue where modpack creator would crash when items with extra materials were present</li>
+					<li>Fix for issue where category saved when creating new materials was incorrect</li>
+					<li>Fix for issue where model export fails if bone name contains numbers</li>
+					<li>Fix for issue where diffuse with black alpha channel would appear incorrectly on model</li>
 				</ul>
 			</li>
 		</ul>
